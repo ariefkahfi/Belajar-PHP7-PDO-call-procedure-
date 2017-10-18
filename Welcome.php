@@ -140,7 +140,8 @@
                 
                 xhr.send('id='+oldId+'&nama='+namaBaru);
                 }).then(function (success){
-                    
+                    bukaDialog.style.display = 'none';
+                    alert(success);
                 },function (error){
                     console.log(error);
                 });
